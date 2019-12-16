@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { MaligaiRoutingModule } from './maligairouting.module';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaligaiRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
